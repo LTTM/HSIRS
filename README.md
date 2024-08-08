@@ -8,21 +8,22 @@ Spectral bands are sequentially captured using a VariSpec<sup>TM</sup> tunable c
 ![alt text](hsirs_schem.png "Overview")
 Figure 1: HSIRS can be used as is or to emulate different snapshot spectrometers. 
 ## HSIRS Stats
-| Nbr. of images    | Spatial res. | Spectral range (nm)| Spectral res. / Nbr. bands | Nbr. semantic classes | Illumination | Image sensor |
-| :---------------: | :----------: | :----------------: | :------------------------: | :-------------------: | :----------: | :----------: |
-| 592 | 2048x2048 | 470 - 700 | 7 nm / 33 bands | 40 | 4 Hologen lamps | Sony xx 
+| Nbr. of images    | Spatial res. | Spectral range (nm)| Spectral res. / Nbr. bands | Nbr. semantic classes | Illumination |
+| :---------------: | :----------: | :----------------: | :------------------------: | :-------------------: | :----------: |
+| 592 | 2048x2048 | 470 - 700 | 7 nm / 33 bands | 40 | 4 Hologen lamps 
 
 ![alt text](stats.png "Stats")
 Figure 2: (Left) Number of fake/real occurences of each food item class. (Right) Sample images in sRGB space with overlaid segmentaion maps. 
 
 ## Dataset Structure
-In the main `HSIRS/` folder there are 4 types of files for each scene:
-- `*_hs_cube.npy`: The hyperspectral cube with shape `[H,W,L]` where `L` is the number of spectral bands (L=33).
-- `*_rgb.png`: The sRGB image obtained from the hyper-spectral cube using the CIE 19xx conversion norm.
-- `*_seg_map.npy`: The segmentation map for each scene containing classes' IDs `[0,1,2,..,40]`, `0` being the ID for the back ground class.
-- `*_seg_map.png`: The gray scale image of the segmentation map [uint8].
+In the main `HSIRS/` folder there are 592 sub-folders for each captured scene. Each with a name `scene_name` and within every sub-folder there are 35 files:
+- `scene_name_xxx_nm.png`: 8-bit gray scale image for a given spectral band (total of 33 bands).
+- `scene_name_rgb.png`: The sRGB image obtained from the hyper-spectral cube using the CIE 1931 conversion norm.
+- `scene_name_seg_map.png`: 8-bit gray scale image of the segmentation map.
 
 Each scene name starts with `YYYYMMDDHHMMSS` indicating the year,month,day, and time of capture. 
+
+The segmentation map for each scene contain classes' IDs `[0,1,2,..,40]`, `0` being the ID for the back ground class.
 
 In addition to that, `labels.txt` is a text file containing the names for all the semantic classes present in the dataset
 
