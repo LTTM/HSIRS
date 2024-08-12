@@ -28,7 +28,7 @@ The segmentation map for each scene contain classes' IDs `[0,1,2,..,40]`, `0` be
 In addition to that, `labels.txt` is a text file containing the names for all the semantic classes present in the dataset
 
 ## Download 
-Download via SharePoint from [[here](https://sonyeur.sharepoint.com/sites/S025-STC-Public/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FS025%2DSTC%2DPublic%2FShared%20Documents%2FPublic%2FHSIRS)] 
+Download via SharePoint from [[here](https://sonyeur.sharepoint.com/sites/S025-STC-Public/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FS025%2DSTC%2DPublic%2FShared%20Documents%2FPublic%2FHSIRS)] (permission required)
 
 ## Citation
 If you use this dataset in your research please cite our work:
