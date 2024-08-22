@@ -1,5 +1,5 @@
 # High-quality Spectral Image Resonstruction and Segmentation Dataset (HSIRS)
-# [[Paper](https://github.com/LTTM/HSIRS/edit/main/README.md)] (Coming soon)
+# [[Paper](https://ieeexplore.ieee.org/document/10640287)]
 
 ## Overview
 We introduce HSIRS, a large scale dataset of hyper-spectral images along with corresponding manually annotated segmentation maps for material characterization and classification based on spectral signature. Such data can be used to simulate any type of spectrometer and to train DNNs end-to-end for spectral reconstruction and image segmentation tasks. HSIRS features scenes containing real and fake (made of polyster, plastic or ceramic) food items with different backgrounds and scene layouts, some scnes contain also colorcheckers. 
@@ -33,11 +33,17 @@ Download via SharePoint from [here](https://sonyeur.sharepoint.com/:f:/s/S025-ST
 ## Citation
 If you use this dataset in your research please cite our work:
 ```
-@article{
-  title={Joint Reconstruction and Spatial Super-resolution of Hyper-Spectral CTIS Images via Multi-Scale Refinement},
+@ARTICLE{TCI_CTIS,
   author={Mel, Mazen and Gatto, Alexander and Zanuttigh, Pietro},
+  journal={IEEE Transactions on Computational Imaging}, 
+  title={Joint Reconstruction and Spatial Super-resolution of Hyper-Spectral CTIS Images via Multi-Scale Refinement}, 
   year={2024},
+  volume={},
+  number={},
+  pages={1-14},
+  doi={10.1109/TCI.2024.3446230}
 }
+
 ```
 ## License
 See LICENSE.txt
