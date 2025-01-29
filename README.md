@@ -10,7 +10,7 @@ Figure 1: HSIRS can be used as is or to emulate different snapshot spectrometers
 ## HSIRS Stats
 | Nbr. of images    | Spatial res. | Spectral range (nm)| Spectral res. / Nbr. bands | Nbr. semantic classes | Illumination | Image sensor |
 | :---------------: | :----------: | :----------------: | :------------------------: | :-------------------: | :----------: | :----------:|
-| 592 | 2048x2048 | 470 - 700 | 7 nm / 33 bands | 40 | 4 Hologen lamps | Sony IMX287
+| 592 | 2048x2048 | 470 - 700 | 7 nm / 33 bands | 40 | 4 Hologen lamps | Sony IMX250
 
 ![alt text](stats.png "Stats")
 Figure 2: (Left) Number of fake/real occurences of each food item class. (Right) Sample images in sRGB space with overlaid segmentaion maps. 
