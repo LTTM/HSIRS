@@ -1,4 +1,4 @@
-# High-quality Spectral Image Resonstruction and Segmentation Dataset (HSIRS)
+# High-quality Spectral Image Reconstruction and Segmentation Dataset (HSIRS)
 # [[Paper](https://ieeexplore.ieee.org/document/10640287)]
 
 ## Overview
